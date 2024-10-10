@@ -1,26 +1,172 @@
 <!--
 Requirements
-[  ] Two Element Selectors
-[  ] Two ID Selectors
-[  ] Two Class Selectors
-[  ] Three Images
+[ x ] Two Element Selectors
+[ x ] Two ID Selectors
+[x  ] Two Class Selectors
+[ x ] Three Images
 
 Select ONE Additional Feature to Add  
 [ no ] Feature 1 - Include a Background Image
-[ no ] Feature 2 - Include Border Radius CSS Property
+[ yes ] Feature 2 - Include Border Radius CSS Property
 [ no ] Feature 3 - Include Horizontal Line
 [ no ] Feature 4 - Embed YouTube Video
 [ no ] Feature 5 - Include Border CSS Property
 -->
-    
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Unit 2 Project</title>
-    </head>
-    <body>
 
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {border: 5px solid ; }
+      body {background-color: #CCB4E6;}
+      h1 {border : 3px solid}
+      h1 {color: #69468F;}
+      h2{ color: #9C78C2}
+      #structure {color: #69468F}
+      #comfort {color:#69468F}
+      #style {color:#69468F}
+      
+      .Structure {color: slateblue}
+      .Comfort {color:darkslateblue }
+      .Style {color:slateblue}
+      .Final {Color: darkslateblue}
+    </style>
+    </head>
+   <body>
+    <h1>An Objective Evaluation of <br>A Few Different Types of Hats</h1>
+    <h2>
+      <em>Based exclusively on how functional they would be as boats if they were
+        really large</em>
+    </h2>
+   
+    <p>
+      To preface this list, I will first explain the rating criteria. All hats
+      will be described and discussed in thorough detail, and will then be rated out of ten in three categories:
+      <ul>
+       <li> <strong id= "structure">Structure</strong>- The structural integrity and overall buoyancy of the hat as a boat.</li>
+         <li><strong id= "comfort">Comfort</strong>- The quality of boat-ride the hat would provide. </li>
+        <li> and <strong id= "style">Style</strong>- The overall coolness and snazziness of the boat.</li>
+     </ul> All ratings are given with the preconceieved notion that as boats all hats are turned upside down. These ratings will be be added together and
+      be used to provide an overall hat-boatness score. Based on these scores, you will be able to glean which hats would make the best boats. <br /><br /><br />
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+
+      <br />
+      <u> The Propeller Hat</u><br />
+  The propeller hat is a visually striking hat. It is a brimmed hat which features bold colors as well as the titualar propeller on top. As a boat, the propeller hat definitely struggles structurally, just by nature of it being a softer hat. However, I do think the brim would offer a nice deck area, and the propeller on the bottom would obviously serve as a sort of motorized mechanism to help the boat move through the water. 
+   <br>
+     <br > <strong class="Structure">Structure</strong>: 5/10
+     <br> <strong class= "Comfort"> Comfort</strong>: 6/10
+     <br> <strong class= "Style"> Style</strong>: 10/10
+     <br> <strong class= "Final"> Final Hat-boatness score</strong>: 70%
+      <br />
+<br>
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+      <br />
+      <u>The Bowler hat </u><br />
+      The bowler hat is a very structured and symetrical hat, which are both
+      traits that I think would make it a very good boat. The roundedness of the bottom of the boat would definitely help
+     in terms of balance if it were to hit particularly rocky waters, which is  a good quality for a boat to have. Overall, I think this would make for a really solid boat.
+          <br />
+
+      <br> <strong class= "Structure"> Structure</strong>: 10/10
+     <br><strong class= "Comfort"> Comfort</strong>: 9/10
+     <br> <strong class= "Style"> Style</strong>: 8/10
+     <br> <strong class= "Final"> Final Hat-boatness score</strong>: 90%
+      <br />
+
+      <br />
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR85AT4xTKqNJra6Z4ra8u2JXc8D9d_pWifeA&s"
+      />
+      <br />
+      <u> The Boater Hat</u>
+      <br />
+     Given its name, I felt that this hat was a mandatory contestant. 
+     Although sort of porous, this hat has a nice structure and a shallow interrier which I think would be nice to stand in. I can just imagine a mast being put up in the center with a sail on it. 
+          <br />
+
+     <br> <strong class= "Structure"> Structure</strong>: 7/10
+     <br><strong class= "Comfort"> Comfort</strong>: 9/10
+     <br> <strong class= "Style"> Style</strong>: 10/10
+     <br> <strong class= "Final">Final Hat-boatness score</strong>: 87%
+     <br>
+    
+          <br />
+
+      <img
+        src="data:image/jpeg;base64,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"
+      />
+
+      <br />
+      <u>The Top Hat</u><br />
+      While it does get high marks for structural integrity, I do also feel like
+      riding in this hat would be a similar experience to that one barrel scene
+      from <em>The Hobbit</em>. I also feel like the lack of roundedness at the bottom would only make the boat more difficult to steer and balance. <br />
+
+     <br> <strong class= "Structure">Structure</strong>: 9/10
+     <br><strong class= "Comfort">Comfort</strong>: 6/10
+     <br> <strong class= "Style">Style</strong>: 8/10
+     <br> <strong class= "Final">Final Hat-boatness score</strong>: 77%
+     <br>
+          <br />
+
+    
+     
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR1xkEwCSYe2ipuUQhPjSSop59WwqnQvlwnA&s"
+      />
+      <br />
+      <u>The Beanie</u>
+      
+
+    <br>  I mean, there's just absolutely no way this thing is going to float for
+      more than a few seconds. I think in terms of positives, the first few
+      miliseconds after impact with the water would probably be sort of comfy (of
+      course being before the hat begins to absorb the water and get all soggy). Many of the listed boats get low scores in the structure category, however I think the hypothetical squishy texture of the hat is extra yucky, so it gets an extra low score. Don't sail on this boat. 
         
-    </body>
+     <br />
+
+ <br> <strong class= "Structure"> Structure</strong>: 0/10
+     <br><strong class= "Comfort">Comfort</strong>: 1/10
+     <br><strong class= "Style"> Style</strong>: 1/10
+     <br> <strong class= "Final"> Final Hat-boatness score</strong>: 6.7%
+     <br>
+          <br />
+
+         <br />
+
+     <img src="https://cdn11.bigcommerce.com/s-mqq1i1xa2c/images/stencil/500x500/products/185974/5626338/998491_NATL_1__04816.1713114674.386.513.jpg?c=1">
+     <br> <u>The Wide-Brim Sun Hat</u>
+    <br> Originally I was only going to write about an average sunhat but then realized how much more interesting it would be to rank one of these obnoxiously large ones. Firstly, I'd like to say that I think these really floppy hats are fabulous. However, that doesn't mean it would hold up well against the unpredictability of the ocean's tides. I genuinely cannot imagine how this thing could possibly be navigated through water. I think the ocean would just sort of let it drift away like a plastic bag or something, assuming a wave doesnt swallow it first. I think the lack of structure and overall floppiness of this hat would be very detrimental toward its efficiency at sea. And so while I think it would be a really funny boat, I don't think it would be a very good one.
+     <br>
+     <br> <strong class= "Structure">Structure</strong>: 0/10
+     <br><strong class= "Comfort">Comfort</strong>: 0/10
+     <br> <strong class= "Style">Style</strong>: 5/10 - Points because I think it's silly
+     <br> <strong class= "Final">Final Hat-boatness score</strong>: 16.7%
+     <br>
+          <br>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwKLf27Y2uD8GXHI3URRu6HUVjP2MT2eCQzPLP2ywF7SVRFRHgDiExwW3MW_jFtsWI10w&usqp=CAU">
+        <br> <u>This Specific Kind of Wizard's Hat</u>
+      <br> This is an objectively great hat. Not only do I think this hat would exceed on the oceans waters, but I think it would probably be able to fly over it.
+     The conical shape doesn't yield the most comfortable boat, 
+     but I think the majestic experience that sailing in a wizard's hat would bring completely negates the discomfort.
+     Also, I'm pretty sure it would have some kind of sparkly particle effect as it flies around, so that automatically makes this one of the best boat options. 
+    
+          <br />
+<br> <strong class= "Structure">Structure</strong>: 10/10
+     <br><strong class= "Comfort">Comfort</strong>: (majestic)
+     <br><strong class= "Style"> Style</strong>: 10/10 
+     <br> <strong class= "Final"> Final Hat-boatness score</strong>: 100%
+          <br />
+     </p>
+
+    <meta charset="utf-8" />
+    <title>Unit 2 Project</title>
+
+ </body>
+  
 </html>
